@@ -3,7 +3,7 @@
 
 (set-face-attribute 'default nil
                     :family "unifont"
-                    :height 90
+                    :height 120
                     :weight 'normal
                     :width  'normal)
 

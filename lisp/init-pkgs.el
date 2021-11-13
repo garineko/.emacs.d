@@ -17,16 +17,6 @@
   :bind (("<M-up>" . drag-stuff-up)
          ("<M-down>" . drag-stuff-down)))
 
-(use-package ivy
-  :config
-  (ivy-mode 1)
-  (setq ivy-use-virtual-buffers t
-        ivy-initial-inputs-alist nil
-        ivy-count-format "%d/%d "
-        enable-recursive-minibuffers t
-        ivy-re-builders-alist '((t . ivy--regex-ignore-order)))
-  (ivy-posframe-mode 1))
-
 (use-package ivy-posframe
   :init
   (setq ivy-posframe-display-functions-alist
@@ -36,6 +26,16 @@
 	  (counsel-find-file . ivy-posframe-display-at-frame-center)
 	  (ivy-switch-buffer . ivy-posframe-display-at-frame-center)
 	  (t . ivy-posframe-display-at-frame-center))))
+
+(use-package ivy
+  :init
+  (ivy-mode 1)
+  (setq ivy-use-virtual-buffers t
+        ivy-initial-inputs-alist nil
+        ivy-count-format "%d/%d "
+        enable-recursive-minibuffers t
+        ivy-re-builders-alist '((t . ivy--regex-ignore-order)))
+  (ivy-posframe-mode 1))
 
 (use-package counsel
   :after ivy

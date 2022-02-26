@@ -1,9 +1,9 @@
-(use-package borland-blue-theme
-  :init (load-theme 'borland-blue t))
+(use-package solarized-theme
+  :init (load-theme 'solarized-dark t))
 
 (set-face-attribute 'default nil
                     :family "unifont"
-                    :height 120
+                    :height 150
                     :weight 'normal
                     :width  'normal)
 

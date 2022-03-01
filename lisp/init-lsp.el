@@ -26,4 +26,6 @@
 
 (use-package rust-mode)
 
+(use-package sly)
+
 (provide 'init-lsp)

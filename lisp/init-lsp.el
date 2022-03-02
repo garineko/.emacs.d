@@ -27,5 +27,6 @@
 (use-package rust-mode)
 
 (use-package sly)
+(setq inferior-lisp-program "sbcl")
 
 (provide 'init-lsp)

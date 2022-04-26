@@ -1,6 +1,3 @@
-(use-package solarized-theme
-  :init (load-theme 'solarized-dark t))
-
 (set-face-attribute 'default nil
                     :family "unifont"
                     :height 150

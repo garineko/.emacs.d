@@ -29,4 +29,6 @@
 (use-package sly)
 (setq inferior-lisp-program "sbcl")
 
+(use-package racket-mode)
+
 (provide 'init-lsp)
